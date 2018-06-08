@@ -1,0 +1,22 @@
+{
+  "name": "final_assignment",
+  "version": "1.0.0",
+  "description": "final_assignment sec2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeroenLu/security_final_assignment.git"
+  },
+  "author": "jeroen luers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeroenLu/security_final_assignment/issues"
+  },
+  "homepage": "https://github.com/jeroenLu/security_final_assignment#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
