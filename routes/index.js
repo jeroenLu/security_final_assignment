@@ -1,9 +1,9 @@
 var express = require('express');
-var app = express()
+var router = express.Router();
 
-
-app.get('/', function (req, res, next) {
-	console.log("TEST")
+router.get('/', function (req, res, next) {
+    console.log("TEST")
+    res.render('index')
 });
 
-app.listen(8080)
+module.exports = router;
