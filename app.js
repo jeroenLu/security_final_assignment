@@ -3,6 +3,9 @@ var router = express.Router();
 var app = express();
 var mongo = require('mongoose');
 
+// models
+require('./models/secret');
+
 // setup view engine
 var exphbs  = require('express-handlebars');
 app.engine('handlebars', exphbs({defaultLayout: 'layout'}));
@@ -23,5 +26,6 @@ var routes = require('./routes/index');
 
 //Set routers as middleware
 app.use('/', routes);
+
 
 module.exports = app;

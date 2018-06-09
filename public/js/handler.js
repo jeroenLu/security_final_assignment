@@ -10,13 +10,19 @@ $(function(){
 				sendSecret(name, text, password);
 			}else{
                 // if text feild is empty get the secret
-				getSecret(name, text);
+				getSecret(name, password);
 			}
 		}else{
 			alert("naam en/of wachtwoord niet ingevuld")
 		}
 	})
 })
+
+function getSecret(name,password){
+	$.get("http://localhost:8080/secret?name="+name+"&password="+password,function(data){
+		$("#secretText").val(data);
+	});
+}
 
 function sendSecret(name, text, password){
 	$.ajax({
